@@ -1,5 +1,7 @@
 # Affine Geometry of Gaussian ReLU Networks via Conditional Kac–Rice Formulas
 
+[![DOI](https://zenodo.org/badge/1380199463.svg)](https://doi.org/10.5281/zenodo.22881941)
+
 Code and data reproducing every table and figure of
 
 > R. Özkan and C. Hirsch, *Affine Geometry of Gaussian ReLU Networks via
