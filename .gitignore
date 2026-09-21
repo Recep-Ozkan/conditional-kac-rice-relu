@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+env/
+
+# macOS / Windows
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editors
+.idea/
+.vscode/
+*.swp
+
+# LaTeX build products of fig_switch_kink.tex
+*.aux
+*.log
+*.out
+*.synctex.gz
+*.fls
+*.fdb_latexmk
+
+# NOTE: the .npy, .npz and .pdf files in this repository are deliberately
+# tracked.  They are the saved outputs and figures used in the article, and the
+# Data availability statement points at them.  Do not add them here.
