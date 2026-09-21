@@ -1,0 +1,43 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite both the article and the archived software release."
+title: "Affine Geometry of Gaussian ReLU Networks via Conditional Kac-Rice Formulas: code and data"
+abstract: >-
+  Code and saved outputs reproducing every table and figure of the article
+  "Affine Geometry of Gaussian ReLU Networks via Conditional Kac-Rice Formulas".
+  Includes the one-dimensional Monte Carlo verification, the Crofton estimator
+  for the higher-dimensional boundary measure, and the exploratory and
+  replicated Breast Cancer Wisconsin studies. All computations are deterministic
+  and the random seeds are recorded.
+type: software
+authors:
+  - family-names: "Özkan"
+    given-names: "Recep"
+    orcid: "https://orcid.org/0000-0002-6088-3496"
+    affiliation: "Middle East Technical University (METU), Ankara, Turkey; Aarhus University, Aarhus, Denmark"
+    email: "rozkan@metu.edu.tr"
+  - family-names: "Hirsch"
+    given-names: "Christian"
+    orcid: "https://orcid.org/0000-0003-4136-3740"
+    affiliation: "Aarhus University, Aarhus, Denmark"
+    email: "hirsch@math.au.dk"
+license: MIT
+version: "1.0.0"
+date-released: "2026-09-21"   # set to the release date
+keywords:
+  - ReLU networks
+  - Kac-Rice formula
+  - activation boundaries
+  - Gaussian initialization
+  - neural network geometry
+  - piecewise-affine functions
+repository-code: "https://github.com/Recep-Ozkan/conditional-kac-rice-relu"
+preferred-citation:
+  type: article
+  title: "Affine Geometry of Gaussian ReLU Networks via Conditional Kac-Rice Formulas"
+  authors:
+    - family-names: "Özkan"
+      given-names: "Recep"
+    - family-names: "Hirsch"
+      given-names: "Christian"
+  journal: "Neurocomputing"
+  year: 2026
