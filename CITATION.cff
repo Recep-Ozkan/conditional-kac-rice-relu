@@ -21,6 +21,7 @@ authors:
     affiliation: "Aarhus University, Aarhus, Denmark"
     email: "hirsch@math.au.dk"
 license: MIT
+doi: "10.5281/zenodo.22881941"
 version: "1.0.0"
 date-released: "2026-09-21"   # set to the release date
 keywords:
