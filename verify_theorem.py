@@ -11,7 +11,7 @@ What this script reports is the AFFINE INTERVAL COUNT, i.e. 1 + R_N(I) in
 the manuscript's notation.  The printed numbers match the "MC" columns of
 the tables.
 
-Theory (Theorem 2.1 and its constant-variance corollary):
+Theory (Theorem 2.2 and its constant-variance corollary):
     int_I rho_l dt = (2/pi) * arcsin(2**(-l/2))   [= 1/2, 1/3, ~0.2301 for l=1,2,3]
     1 + E R_N(I) = 1 + sum_l n_l * int_I rho_l + o(N)
     For L = 1 the formula is exact at every finite width.
@@ -36,7 +36,7 @@ A_END, B_END = -1.0, 1.0
 
 
 def rho_integral(l):
-    """int_{-1}^{1} rho_l(t) dt for unit variances (Corollary 7.1)."""
+    """int_{-1}^{1} rho_l(t) dt for unit variances (Corollary E.1)."""
     return 2 / np.pi * np.arcsin(2.0 ** (-l / 2))
 
 
@@ -141,7 +141,7 @@ def make_figure(r1, r2, r3, fname="fig_mc_convergence.pdf"):
 
 
 def run_unequal(trials=500):
-    """Unequal-width check (last block of Table 1): two allocations of the
+    """Unequal-width check (last block of Table E.1): two allocations of the
     same total width N = 192 at depth L = 2, plus an L = 3 sanity check."""
     RNG = np.random.default_rng([SEED, 99])
     print(f"\n=== unequal widths, trials = {trials} ===")
