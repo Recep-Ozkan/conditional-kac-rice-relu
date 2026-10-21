@@ -33,6 +33,7 @@ Adam optimiser in `wisconsin_geometry.py` are implemented directly in NumPy.
 | `crofton_estimator.py` | the sphere calibration table and the higher-dimensional boundary-measure table |
 | `wisconsin_geometry.py` | the single-split exploratory Wisconsin study, the robustness sweep, and `fig_wisconsin_trajectory.pdf` |
 | `wisconsin_replication.py` | the replicated Wisconsin study behind the main-text tables, and `fig_wisconsin_splits.pdf` |
+| `zero_bias_circle.py` | the exact zero-bias verification on the unit circle |
 
 `wisconsin_replication.py` imports the network, training and switch-counting
 routines from `wisconsin_geometry.py`, so both Wisconsin studies measure the
@@ -71,6 +72,7 @@ included at scale one and their labels keep their authored size.
 | `crofton_estimator.py` | `20260816` | `default_rng([SEED, d, L])` per configuration; a single `default_rng(SEED)` stream for the sphere calibration |
 | `wisconsin_geometry.py` | `42` | `default_rng([42, s])` for the exploratory tables, `[42, 1000 + s]` for the trajectory, `[42, 7000 + s]` for the robustness sweep |
 | `wisconsin_replication.py` | `42` | `StratifiedShuffleSplit(random_state=42)` for the split partitions, `default_rng([42, 5000 + i])` for the segments of split `i`, `default_rng([42, i, k])` for network seed `k` of split `i` |
+| `zero_bias_circle.py` | `20261020` | `default_rng([SEED, *widths])`, one stream per architecture |
 
 The four streams of the two Wisconsin scripts are disjoint, so the exploratory
 study and the replicated study share no random numbers.
@@ -84,6 +86,8 @@ python crofton_estimator.py           # calibration table, then the network tabl
 python wisconsin_geometry.py          # exploratory tables, trajectory, robustness sweep
 python wisconsin_replication.py       # replicated main-text tables, about 40 seconds
 python wisconsin_replication.py --quick   # 3 splits x 2 seeds, for a fast check
+python zero_bias_circle.py            # zero-bias verification, about 100 seconds
+python zero_bias_circle.py --quick   # 2000 networks per configuration
 ```
 
 Each script writes its figures and its `.npy` / `.npz` outputs into the working
