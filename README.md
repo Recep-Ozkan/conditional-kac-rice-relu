@@ -133,7 +133,8 @@ and is loaded directly through `sklearn.datasets.load_breast_cancer`. No data
 file is redistributed here. In every run the evaluation segments join held-out
 test points. The two scripts differ in protocol, deliberately:
 
-* `wisconsin_geometry.py` — the exploratory study of the article's appendix.
+* `wisconsin_geometry.py` — the exploratory study reported in the
+  supplementary material.
   One fixed 70/30 split with seed 42; features standardised coordinatewise over
   the full dataset; four architectures.
 * `wisconsin_replication.py` — the principal study of the main text. Ten
@@ -146,7 +147,8 @@ test points. The two scripts differ in protocol, deliberately:
 
 **Corrections made during the study.** Two implementation errors were found and
 fixed before the reported results were recorded, and both are described in the
-article's reproducibility notes. First, an early trajectory implementation reset
+reproducibility notes of the supplementary material. First, an early
+trajectory implementation reset
 the Adam state at each checkpoint; the optimiser state is now carried through
 the run. The trajectory remains a separate run with its own seed stream and its
 own segment sample on the exploratory split, so its levels are not directly
