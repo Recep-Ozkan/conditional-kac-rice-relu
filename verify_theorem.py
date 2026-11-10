@@ -36,7 +36,10 @@ A_END, B_END = -1.0, 1.0
 
 
 def rho_integral(l):
-    """int_{-1}^{1} rho_l(t) dt for unit variances (Corollary E.1)."""
+    """int_{-1}^{1} rho_l(t) dt for unit variances.
+
+    Corollary S1 of the supplementary material.
+    """
     return 2 / np.pi * np.arcsin(2.0 ** (-l / 2))
 
 
@@ -141,7 +144,8 @@ def make_figure(r1, r2, r3, fname="fig_mc_convergence.pdf"):
 
 
 def run_unequal(trials=500):
-    """Unequal-width check (last block of Table E.1): two allocations of the
+    """Unequal-width check, last block of Table S1 of the supplementary
+    material: two allocations of the
     same total width N = 192 at depth L = 2, plus an L = 3 sanity check."""
     RNG = np.random.default_rng([SEED, 99])
     print(f"\n=== unequal widths, trials = {trials} ===")
