@@ -3,9 +3,10 @@ message: "If you use this software, please cite both the article and the archive
 title: "Affine Geometry of Gaussian ReLU Networks via Conditional Kac-Rice Formulas: code and data"
 abstract: >-
   Code and saved outputs reproducing every table and figure of the article
-  "Affine Geometry of Gaussian ReLU Networks via Conditional Kac-Rice Formulas".
-  Includes the one-dimensional Monte Carlo verification, the Crofton estimator
-  for the higher-dimensional boundary measure, and the exploratory and
+  "Affine Geometry of Gaussian ReLU Networks via Conditional Kac-Rice Formulas"
+  and its supplementary material. Includes the exact zero-bias verification on
+  the unit circle, the one-dimensional Monte Carlo verification, the Crofton
+  estimator for the higher-dimensional boundary measure, and the exploratory and
   replicated Breast Cancer Wisconsin studies. All computations are deterministic
   and the random seeds are recorded.
 type: software
@@ -18,12 +19,12 @@ authors:
   - family-names: "Hirsch"
     given-names: "Christian"
     orcid: "https://orcid.org/0000-0003-4136-3740"
-    affiliation: "Aarhus University, Aarhus, Denmark"
+    affiliation: "Aarhus University, Aarhus, Denmark; University of Göttingen, Göttingen, Germany"
     email: "hirsch@math.au.dk"
 license: MIT
 doi: "10.5281/zenodo.22881941"
-version: "1.0.0"
-date-released: "2026-09-21"   # set to the release date
+version: "1.1.0"
+date-released: "2026-11-10"
 keywords:
   - ReLU networks
   - Kac-Rice formula
